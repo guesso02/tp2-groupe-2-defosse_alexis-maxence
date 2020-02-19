@@ -2,7 +2,7 @@
 
 **Exercice 1:**
 
-*1) Dans quels dossiers bash trouve-t-il les commandes tapées par l’utilisateur?
+*1) Dans quels dossiers bash trouve-t-il les commandes tapées par l’utilisateur?*
 
 *printenv PATH*
 
@@ -10,12 +10,12 @@
 
  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 
-*2) Quelle variable d’environnement permet à la commande cd tapée sans argument de vous ramener dansvotre répertoire personnel?
+*2) Quelle variable d’environnement permet à la commande cd tapée sans argument de vous ramener dansvotre répertoire personnel?*
 
 La variable ~
 Il suffit de taper cd ~
  
-*3) Explicitez le rôle des variables **LANG,PWD,OLDPWD,SHELL et_.***
+*3) Explicitez le rôle des variables* **LANG,PWD,OLDPWD,SHELL et_.**
 
 **LANG** -> Détermine le languague utilisé par les logiciels pour communiquer avec l'utilisateur.
 
@@ -39,14 +39,13 @@ de cette question, tapez la commande exit pour revenir dans votre session initia
 bash -> Elle permet de rentrer dans l'environement bash, la variable MY_VAR n'existe plus car elle existe uniquement pour la session ou elle à été créer .
 
 
-6)Transformez MY_VAR en une variable d’environnement et recommencez la question précédente. Expli-
-quez.
+*6)Transformez MY_VAR en une variable d’environnement et recommencez la question précédente. Expliquez.*
 
 **export MY_VAR="1" ; printenv MY_VAR**
 Si on retourne dans *bash* , la variable existe puisque cette fois-ci on à créer une variable d'environement et non une variable locale (merci le cour).
 
-7)Créer la variable d’environnement NOMS ayant pour contenu vos noms de binômes séparés par un espace.
-Afficher la valeur de NOMS pour vérifier que l’affectation est correcte.
+*7)Créer la variable d’environnement NOMS ayant pour contenu vos noms de binômes séparés par un espace.
+Afficher la valeur de NOMS pour vérifier que l’affectation est correcte.*
 
 **export NOMS="Défossé Défossé" ; printenv NOMS**
 
