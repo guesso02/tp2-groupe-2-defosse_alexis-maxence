@@ -42,7 +42,7 @@ bash -> Elle permet de rentrer dans l'environement bash, la variable MY_VAR n'ex
 *6)Transformez MY_VAR en une variable d’environnement et recommencez la question précédente. Expliquez.*
 
 **export MY_VAR="1" ; printenv MY_VAR**
-Si on retourne dans *bash* , la variable existe puisque cette fois-ci on à créer une variable d'environement et non une variable locale (merci le cour).
+Si on retourne dans *bash* , la variable existe puisque cette fois-ci on à créer une variable d'environement et non une variable locale.
 
 *7)Créer la variable d’environnement NOMS ayant pour contenu vos noms de binômes séparés par un espace.
 Afficher la valeur de NOMS pour vérifier que l’affectation est correcte.*
