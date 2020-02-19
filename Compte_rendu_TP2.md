@@ -18,9 +18,13 @@ Il suffit de taper cd ~
 3) Explicitez le rôle des variables **LANG,PWD,OLDPWD,SHELL et_.**
 
 **LANG** -> Détermine le languague utilisé par les logiciels pour communiquer avec l'utilisateur.
+
 **PWD** -> Affiche le répértoire courant ou on se situe.
+
 **OLDPWD** -> (echo $OLDPWD) affiche l'avant dernier chemin ou l'utilisateur est allé, par exemple si on utilise succesivement cd /bin puis cd /dev, le résultat de echo $OLDPWD sera /bin.
+
 **SHELL** -> (echo $SHELL) affiche le chemin du fichier de shell
+
 **_**-> (echo $_) sauvegarde le dérnier argument rentrer par l'utilisateur, par exemple si je tape "adadada" puis que j'éxécute echo _ le résultat sera "adadada".
 
 4) Créez une variable locale **MY_VAR** (le contenu n’a pas d’importance). Vérifiez que la variable existe.
@@ -172,6 +176,7 @@ done
 echo "le factorielle de $1 est $res"
 ```
 **Exercice 6**
+
 ```bash
 #!/bin/bash
 
@@ -210,3 +215,48 @@ echo $maVal
 
 ```
 
+**Exercice 7**
+```bash
+#!/bin/bash
+
+MIN=$1
+MAX=$1
+MOY=0
+MEM=0
+
+nb_val=$#
+
+for i in $(seq 1 $#)
+do
+   
+    if [[ $1 -gt 100 || $1 -lt "-100" ]]; then
+        echo "Mauvais paramètre"
+        exit 1
+       
+    else
+   
+    if [ $1 -lt $MIN ]; then
+   
+    MIN=$1;   
+
+    else
+   
+    MAX=$1;
+
+    fi
+
+
+    MEM=$(($MEM+$1))
+   
+    shift
+   
+    fi
+   
+done
+    moy=$(($MEM/$nb_val))
+    echo "Valeur moyenne: "$moy
+    echo "Valeur max: "$MAX
+    echo "Valeur min: "$MIN
+    
+    
+    ```
