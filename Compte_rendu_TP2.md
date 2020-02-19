@@ -12,8 +12,9 @@
 
 *2) Quelle variable d’environnement permet à la commande cd tapée sans argument de vous ramener dansvotre répertoire personnel?*
 
-La variable ~
-Il suffit de taper cd ~
+La variable $home
+
+Il suffit de taper cd $home
  
 *3) Explicitez le rôle des variables* **LANG,PWD,OLDPWD,SHELL et_.**
 
