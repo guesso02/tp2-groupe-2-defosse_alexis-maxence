@@ -171,3 +171,42 @@ do
 done
 echo "le factorielle de $1 est $res"
 ```
+**Exercice 6**
+```bash
+#!/bin/bash
+
+MAXIMUM=1000
+MINIMUM=1
+VAL=$((MINIMUM+RANDOM*(1+MAXIMUM-MINIMUM)/32767))
+Boucle=0
+echo $VAL
+
+read -p "Choisissez une valeur:" maVal
+
+echo $maVal
+
+   while [ $Boucle -eq 0 ]; do
+
+     if [ $maVal -eq $VAL ]; then
+
+        Boucle=1
+        echo "T balèze twa"
+
+      elif [ $maVal -lt $VAL ]; then
+
+         echo "La valeur est plus grande! "
+
+         read -p "Choisissez une valeur:" maVal
+  
+      else
+
+         echo "La valeur est plus petite! "
+
+         read -p "Choisissez une valeur:" maVal
+
+      fi
+
+     done
+
+```
+
