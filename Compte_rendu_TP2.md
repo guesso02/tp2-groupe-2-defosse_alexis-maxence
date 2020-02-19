@@ -78,7 +78,7 @@ Pour mettre le dossier script de maniére permanante dans le PATH il faut :
 *Puis source* **~/.bashrc**
 
 **Exercice 2. Contrôle de mot de passe**
-
+```bash
 *#!/bin/bash
 
 PASSWORD="az12"
@@ -95,9 +95,9 @@ echo "Le mdp Saisi n'est pas le bon"
 
 fi
 
-
+```
 **Exercice 3**
-
+```bash
 #!/bin/bash
 
 
@@ -122,5 +122,37 @@ echo "Non"
 else
 echo "Oui"
 fi
+```
+**Exercice 4**
+```bash
+#!/bin/bash
 
 
+if [ -z "$1"  ]; then
+
+echo "Utilisation: $0 nom_utilisateur"
+
+
+else
+
+     test=$(grep $1 /etc/passwd)
+        
+
+       if [ -z "$test" ]; then
+
+           echo "L'utilisateur n'existe pas."
+       
+
+       else
+        
+           echo "L'utilisateur existe."
+
+         
+       fi
+
+   
+ fi
+
+
+
+```
