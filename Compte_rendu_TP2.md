@@ -66,7 +66,7 @@ Si on unest la variable elle est supprimer.*
 10)Utilisez la commande echo pour écrire exactement la phrase : $HOME = chemin (où chemin est votre
 dossier personnel d’après bash)
 
-**echo '$HOME' = "$HOME"**
+**echo '$HOME' = $HOME**
 
 
 **Programmation Bash**
@@ -79,7 +79,21 @@ Pour mettre le dossier script de maniére permanante dans le PATH il faut :
 
 **Exercice 2. Contrôle de mot de passe**
 
+*#!/bin/bash
 
+PASSWORD="az12"
+
+read -sp "Saisissez un mot de passe :" mdp
+
+if [ $PASSWORD == $mdp ] ; then
+
+echo "MDP ok"
+
+else
+
+echo "Le mdp Saisi n'est pas le bon"
+
+fi
 
 
 
