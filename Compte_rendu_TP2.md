@@ -25,7 +25,7 @@ Il suffit de taper cd ~
 
 **SHELL** -> (echo $SHELL) affiche le chemin du fichier de shell
 
-**_**-> (echo $_) sauvegarde le dérnier argument rentrer par l'utilisateur, par exemple si je tape "adadada" puis que j'éxécute echo _ le résultat sera "adadada".
+**_** -> (echo $_) sauvegarde le dérnier argument rentrer par l'utilisateur, par exemple si je tape "adadada" puis que j'éxécute echo _ le résultat sera "adadada".
 
 4) Créez une variable locale **MY_VAR** (le contenu n’a pas d’importance). Vérifiez que la variable existe.
 
