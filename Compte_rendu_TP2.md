@@ -96,4 +96,31 @@ echo "Le mdp Saisi n'est pas le bon"
 fi
 
 
+**Exercice 3**
+
+#!/bin/bash
+
+
+
+
+function is_number()
+{
+re='^[+-]?[0-9]+([.][0-9]+)?$'
+if ! [[ $1 =~ $re ]] ; then
+return 1
+else
+return 0
+fi
+}
+
+is_number $1
+
+if [ $? == 1 ]; then
+
+echo "Non"
+
+else
+echo "Oui"
+fi
+
 
