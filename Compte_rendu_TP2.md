@@ -239,7 +239,7 @@ do
    
     MIN=$1;   
 
-    else
+    elif [ $1 -gt $MAX ]; then
    
     MAX=$1;
 
